@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D0F32CE2C4FAA58006981BE /* WeatherKitTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32CD2C4FAA58006981BE /* WeatherKitTutorialApp.swift */; };
-		0D0F32D02C4FAA58006981BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32CF2C4FAA58006981BE /* ContentView.swift */; };
+		0D0F32D02C4FAA58006981BE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32CF2C4FAA58006981BE /* WeatherView.swift */; };
 		0D0F32D22C4FAA59006981BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0F32D12C4FAA59006981BE /* Assets.xcassets */; };
 		0D0F32D52C4FAA59006981BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0F32D42C4FAA59006981BE /* Preview Assets.xcassets */; };
 		0D0F32DF2C4FAA59006981BE /* WeatherKitTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32DE2C4FAA59006981BE /* WeatherKitTutorialTests.swift */; };
 		0D0F32E92C4FAA59006981BE /* WeatherKitTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32E82C4FAA59006981BE /* WeatherKitTutorialUITests.swift */; };
 		0D0F32EB2C4FAA59006981BE /* WeatherKitTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32EA2C4FAA59006981BE /* WeatherKitTutorialUITestsLaunchTests.swift */; };
+		0D0F32F92C4FB358006981BE /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32F82C4FB358006981BE /* WeatherManager.swift */; };
+		0D0F32FC2C4FFD95006981BE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F32FB2C4FFD95006981BE /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0D0F32CA2C4FAA58006981BE /* WeatherKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0F32CD2C4FAA58006981BE /* WeatherKitTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitTutorialApp.swift; sourceTree = "<group>"; };
-		0D0F32CF2C4FAA58006981BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D0F32CF2C4FAA58006981BE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		0D0F32D12C4FAA59006981BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D0F32D42C4FAA59006981BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D0F32DA2C4FAA59006981BE /* WeatherKitTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherKitTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,9 @@
 		0D0F32E42C4FAA59006981BE /* WeatherKitTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherKitTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0F32E82C4FAA59006981BE /* WeatherKitTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitTutorialUITests.swift; sourceTree = "<group>"; };
 		0D0F32EA2C4FAA59006981BE /* WeatherKitTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D0F32F82C4FB358006981BE /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		0D0F32FA2C4FB4EA006981BE /* WeatherKitTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherKitTutorial.entitlements; sourceTree = "<group>"; };
+		0D0F32FB2C4FFD95006981BE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,13 @@
 		0D0F32CC2C4FAA58006981BE /* WeatherKitTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0D0F32FA2C4FB4EA006981BE /* WeatherKitTutorial.entitlements */,
 				0D0F32CD2C4FAA58006981BE /* WeatherKitTutorialApp.swift */,
-				0D0F32CF2C4FAA58006981BE /* ContentView.swift */,
+				0D0F32CF2C4FAA58006981BE /* WeatherView.swift */,
 				0D0F32D12C4FAA59006981BE /* Assets.xcassets */,
 				0D0F32D32C4FAA59006981BE /* Preview Content */,
+				0D0F32F82C4FB358006981BE /* WeatherManager.swift */,
+				0D0F32FB2C4FFD95006981BE /* LocationManager.swift */,
 			);
 			path = WeatherKitTutorial;
 			sourceTree = "<group>";
@@ -257,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D0F32D02C4FAA58006981BE /* ContentView.swift in Sources */,
+				0D0F32FC2C4FFD95006981BE /* LocationManager.swift in Sources */,
+				0D0F32F92C4FB358006981BE /* WeatherManager.swift in Sources */,
+				0D0F32D02C4FAA58006981BE /* WeatherView.swift in Sources */,
 				0D0F32CE2C4FAA58006981BE /* WeatherKitTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeatherKitTutorial/WeatherKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherKitTutorial/Preview Content\"";
@@ -448,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeatherKitTutorial/WeatherKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherKitTutorial/Preview Content\"";
